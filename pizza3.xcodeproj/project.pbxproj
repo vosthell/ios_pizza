@@ -12,6 +12,10 @@
 		F7F808701C08B48F00631258 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F8086E1C08B48F00631258 /* Main.storyboard */; };
 		F7F808721C08B48F00631258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F808711C08B48F00631258 /* Assets.xcassets */; };
 		F7F808751C08B48F00631258 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F808731C08B48F00631258 /* LaunchScreen.storyboard */; };
+		F7F8087D1C08B7D200631258 /* DosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F8087C1C08B7D200631258 /* DosViewController.swift */; };
+		F7F8087F1C08B7DE00631258 /* TresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F8087E1C08B7DE00631258 /* TresViewController.swift */; };
+		F7F808811C08D6D400631258 /* CuatroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F808801C08D6D400631258 /* CuatroViewController.swift */; };
+		F7F808831C08D6F500631258 /* CincoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F808821C08D6F500631258 /* CincoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		F7F808711C08B48F00631258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7F808741C08B48F00631258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7F808761C08B48F00631258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7F8087C1C08B7D200631258 /* DosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DosViewController.swift; sourceTree = "<group>"; };
+		F7F8087E1C08B7DE00631258 /* TresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TresViewController.swift; sourceTree = "<group>"; };
+		F7F808801C08D6D400631258 /* CuatroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuatroViewController.swift; sourceTree = "<group>"; };
+		F7F808821C08D6F500631258 /* CincoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CincoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 				F7F8086A1C08B48F00631258 /* AppDelegate.swift */,
 				F7F8086C1C08B48F00631258 /* ViewController.swift */,
 				F7F8086E1C08B48F00631258 /* Main.storyboard */,
+				F7F808801C08D6D400631258 /* CuatroViewController.swift */,
+				F7F808821C08D6F500631258 /* CincoViewController.swift */,
+				F7F8087C1C08B7D200631258 /* DosViewController.swift */,
+				F7F8087E1C08B7DE00631258 /* TresViewController.swift */,
 				F7F808711C08B48F00631258 /* Assets.xcassets */,
 				F7F808731C08B48F00631258 /* LaunchScreen.storyboard */,
 				F7F808761C08B48F00631258 /* Info.plist */,
@@ -136,6 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F8086D1C08B48F00631258 /* ViewController.swift in Sources */,
+				F7F808831C08D6F500631258 /* CincoViewController.swift in Sources */,
+				F7F8087D1C08B7D200631258 /* DosViewController.swift in Sources */,
+				F7F808811C08D6D400631258 /* CuatroViewController.swift in Sources */,
+				F7F8087F1C08B7DE00631258 /* TresViewController.swift in Sources */,
 				F7F8086B1C08B48F00631258 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
