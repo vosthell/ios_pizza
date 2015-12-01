@@ -58,29 +58,41 @@ class CuatroViewController: UIViewController {
         var seleccionados = 0
         var indice : Int?
         seleccionados = Array.count
-        if(seleccionados>4)
-        {
-            lblMensaje.text = "Solo se puede escoger 5 ingredientes\(seleccionados)"
-            swPimiento.setOn(false, animated:true)
+        
+        if swPimiento.on {
+
+            if(seleccionados>4)
+            {
+                lblMensaje.text = "Solo se puede escoger 5 ingredientes\(seleccionados)"
+                swPimiento.setOn(false, animated:true)
             
-        }
-        else
-        {
-            if swPimiento.on {
-                Array.append("PIMIENTO")
-                //myTextField.text = "The Switch is Off"
-                //println("Switch is on")
-                //mySwitch.setOn(false, animated:true)
-            } else {
-                indice = Array.indexOf("PIMIENTO")
-                Array.removeAtIndex(indice!)
-                //myTextField.text = "The Switch is On"
-                //mySwitch.setOn(true, animated:true)
             }
-            seleccionados = Array.count
-            lblMensaje.text = "\(seleccionados)Elementos seleccionados\(indice)"
+            else
+            {
+                //if swPimiento.on {
+                    Array.append("PIMIENTO")
+                    //myTextField.text = "The Switch is Off"
+                    //println("Switch is on")
+                    //mySwitch.setOn(false, animated:true)
+                //} else {
+                  //  indice = Array.indexOf("PIMIENTO")
+                    //Array.removeAtIndex(indice!)
+                    //myTextField.text = "The Switch is On"
+                    //mySwitch.setOn(true, animated:true)
+                //}
+                
             
+            }
         }
+        else {
+            indice = Array.indexOf("PIMIENTO")
+            Array.removeAtIndex(indice!)
+            //myTextField.text = "The Switch is On"
+            //mySwitch.setOn(true, animated:true)
+        }
+        seleccionados = Array.count
+        lblMensaje.text = "\(seleccionados)Elementos seleccionados\(indice)"
+
 
     }
     @IBAction func modificarCebolla(sender: UISwitch) {
@@ -118,6 +130,7 @@ class CuatroViewController: UIViewController {
         var seleccionados = 0
         var indice : Int?
         seleccionados = Array.count
+        
             if swAceituna.on {
                 if(seleccionados>4)
                 {

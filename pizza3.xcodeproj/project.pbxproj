@@ -18,6 +18,30 @@
 		F7F808831C08D6F500631258 /* CincoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F808821C08D6F500631258 /* CincoViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F7F809011C09207900631258 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7F808FB1C09207800631258 /* pizzaWatch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F7F808BD1C09207600631258;
+			remoteInfo = pizzaWatch;
+		};
+		F7F809031C09207900631258 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7F808FB1C09207800631258 /* pizzaWatch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F7F808CF1C09207700631258;
+			remoteInfo = "pizzaWatch WatchKit App";
+		};
+		F7F809051C09207900631258 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7F808FB1C09207800631258 /* pizzaWatch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F7F808DE1C09207700631258;
+			remoteInfo = "pizzaWatch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		F7F808671C08B48F00631258 /* pizza3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pizza3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F8086A1C08B48F00631258 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +54,7 @@
 		F7F8087E1C08B7DE00631258 /* TresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TresViewController.swift; sourceTree = "<group>"; };
 		F7F808801C08D6D400631258 /* CuatroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CuatroViewController.swift; sourceTree = "<group>"; };
 		F7F808821C08D6F500631258 /* CincoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CincoViewController.swift; sourceTree = "<group>"; };
+		F7F808FB1C09207800631258 /* pizzaWatch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pizzaWatch.xcodeproj; path = pizzaWatch/pizzaWatch.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +71,7 @@
 		F7F8085E1C08B48E00631258 = {
 			isa = PBXGroup;
 			children = (
+				F7F808FB1C09207800631258 /* pizzaWatch.xcodeproj */,
 				F7F808691C08B48F00631258 /* pizza3 */,
 				F7F808681C08B48F00631258 /* Products */,
 			);
@@ -74,6 +100,16 @@
 				F7F808761C08B48F00631258 /* Info.plist */,
 			);
 			path = pizza3;
+			sourceTree = "<group>";
+		};
+		F7F808FC1C09207800631258 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7F809021C09207900631258 /* pizzaWatch.app */,
+				F7F809041C09207900631258 /* pizzaWatch WatchKit App.app */,
+				F7F809061C09207900631258 /* pizzaWatch WatchKit Extension.appex */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,12 +158,42 @@
 			mainGroup = F7F8085E1C08B48E00631258;
 			productRefGroup = F7F808681C08B48F00631258 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F7F808FC1C09207800631258 /* Products */;
+					ProjectRef = F7F808FB1C09207800631258 /* pizzaWatch.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F7F808661C08B48F00631258 /* pizza3 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F7F809021C09207900631258 /* pizzaWatch.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = pizzaWatch.app;
+			remoteRef = F7F809011C09207900631258 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F7F809041C09207900631258 /* pizzaWatch WatchKit App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "pizzaWatch WatchKit App.app";
+			remoteRef = F7F809031C09207900631258 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F7F809061C09207900631258 /* pizzaWatch WatchKit Extension.appex */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.app-extension";
+			path = "pizzaWatch WatchKit Extension.appex";
+			remoteRef = F7F809051C09207900631258 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F7F808651C08B48F00631258 /* Resources */ = {
@@ -302,6 +368,7 @@
 				F7F8087B1C08B48F00631258 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
